@@ -6,3 +6,6 @@ $('td').click(function() {
     $(this).attr('class', 'O');
   });
 });
+
+// All that's needed now is to create a JS object out of 
+//our table data so we can determine a winner.

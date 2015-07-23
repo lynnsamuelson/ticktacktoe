@@ -1,9 +1,11 @@
 .header {
   color: #b46834;
   text-align: center;
+  margin: 10px auto;
 }
 table {
   text-align: center;
+  margin: 20px auto;
 }
 td {
   border: 2px solid black;
@@ -13,8 +15,12 @@ td {
   vertical-align: middle;
   background-color: #d29062;
   color: #d2c862;
+  border-radius: 5px;
 }
 div {
  width: 100px;
  border: 1px green solid;
 }
+
+/*All that's needed now is to create a JS object 
+out of our table data so we can determine a winner.*/
