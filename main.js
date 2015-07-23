@@ -1,5 +1,8 @@
-$('.one, .two, .three').click(function() {                             
-    this.className = {
-       three : 'one', one: 'two', two: 'three'
-    }[this.className];
+$('td').click(function() {
+  $(this).text('X');
+  $(this).addClass("X");
+  $(this).click(function() {
+    $(this).text('O');
+    $(this).attr('class', 'O');
+  });
 });

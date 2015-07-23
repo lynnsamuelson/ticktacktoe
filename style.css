@@ -14,18 +14,6 @@ td {
   background-color: #d29062;
   color: #d2c862;
 }
-.one:before  { 
-  content: "O";
-  color: blue; 
-}
-.two:before  { 
-  content: ""; 
-  color: green;
-}
-.three:before  { 
-  content: "X";
-  color: red;
-}
 div {
  width: 100px;
  border: 1px green solid;
