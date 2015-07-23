@@ -1,0 +1,32 @@
+.header {
+  color: #b46834;
+  text-align: center;
+}
+
+td {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  text-align:center; 
+  vertical-align:middle;
+  background-color: #d29062;
+  text-color: #d2c862;
+}
+
+.one:before  { 
+  content: "Click";
+  color: blue; 
+}
+.two:before  { 
+  content: "X"; 
+  color: green;
+}
+.three:before  { 
+  content: "O";
+  color: red;
+}
+
+div {
+ width: 100px;
+ border: 1px green solid;
+}
