@@ -2,6 +2,7 @@ var dataArray = [];
 var winner = "";
 var scoreX = 0;
 var scoreO = 0;
+var clickCounter = 2;
 function score () {
   if ((dataArray[1] === "X" && dataArray[2] === "X" && dataArray[3] === "X") ||
       (dataArray[1] === "X" && dataArray[4] === "X" && dataArray[7] === "X") ||
@@ -33,6 +34,7 @@ function score () {
   }
 };
 $('td:not(#reset)').click(function() {
+  if (clickCounter % 2 === 0) {
   $(this).text('X');
   $(this).addClass("X");
   $('#winner').text("");
@@ -47,22 +49,24 @@ $('td:not(#reset)').click(function() {
   dataArray [9] = $('#nine').text();
   console.log(dataArray);
   score();
-});
-$('td:not(#reset)').dblclick(function() {
-  $(this).text('O');
-  $(this).attr('class', 'O');
-  $('#winner').text("");
-  dataArray [1] = $('#one').text();
-  dataArray [2] = $('#two').text();
-  dataArray [3] = $('#three').text();
-  dataArray [4] = $('#four').text();
-  dataArray [5] = $('#five').text();
-  dataArray [6] = $('#six').text();
-  dataArray [7] = $('#seven').text();
-  dataArray [8] = $('#eight').text();
-  dataArray [9] = $('#nine').text();
-  console.log(dataArray);
-  score();
+  clickCounter += 1;
+  } else {
+       $(this).text('O');
+      $(this).attr('class', 'O');
+      $('#winner').text("");
+      dataArray [1] = $('#one').text();
+      dataArray [2] = $('#two').text();
+      dataArray [3] = $('#three').text();
+      dataArray [4] = $('#four').text();
+      dataArray [5] = $('#five').text();
+      dataArray [6] = $('#six').text();
+      dataArray [7] = $('#seven').text();
+      dataArray [8] = $('#eight').text();
+      dataArray [9] = $('#nine').text();
+      console.log(dataArray);
+      score(); 
+      clickCounter += 1;
+  } 
 });
 $('#reset').click(function() {
   $('td:not(#reset)').text("");
