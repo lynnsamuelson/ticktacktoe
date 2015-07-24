@@ -17,6 +17,8 @@ function score () {
     console.log("X Wins!");
     scoreX += 1;
     $('#scrX').text("X Score: " + scoreX);
+    dataArray.splice(0,dataArray.length);
+    $('td:not(#reset)').text("");
   }
   if ((dataArray[1] === "O" && dataArray[2] === "O" && dataArray[3] === "O") ||
       (dataArray[1] === "O" && dataArray[4] === "O" && dataArray[7] === "O") ||
@@ -31,6 +33,8 @@ function score () {
     console.log("O Wins!");
     scoreO += 1;
     $('#scrO').text("O Score: " + scoreO);
+    dataArray.splice(0,dataArray.length);
+    $('td:not(#reset)').text("");
   }
 };
 $('td:not(#reset)').click(function() {
@@ -51,7 +55,7 @@ $('td:not(#reset)').click(function() {
   score();
   clickCounter += 1;
   } else {
-       $(this).text('O');
+      $(this).text('O');
       $(this).attr('class', 'O');
       $('#winner').text("");
       dataArray [1] = $('#one').text();
@@ -71,7 +75,12 @@ $('td:not(#reset)').click(function() {
 $('#reset').click(function() {
   $('td:not(#reset)').text("");
   dataArray.splice(0,dataArray.length);
-  $('#winner').text("")
+  scoreX = 0;
+  scoreO = 0;
+  score();
+  $('#scrX').text("X Score: " + scoreX);
+  $('#scrO').text("O Score: " + scoreO);
+  $('#winner').text("");
 });
 $('#scrX').text("X Score: " + scoreX);
 $('#scrO').text("O Score: " + scoreO);
