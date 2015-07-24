@@ -5,6 +5,7 @@
   color: #b46834;
   text-align: center;
   margin: 10px auto;
+  font-size: 4em;
 }
 #game  {
   text-align: center;
@@ -19,6 +20,7 @@ td {
   background-color: #d29062;
   color: #d2c862;
   border-radius: 5px;
+  font-size: 2em;
 }
 div {
  width: 100px;
@@ -28,5 +30,6 @@ div {
 #winner {
   text-align:center;
   border: none;
+  font-size: 3em;
   
 }
