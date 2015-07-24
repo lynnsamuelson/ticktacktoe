@@ -3,7 +3,7 @@
   text-align: center;
   margin: 10px auto;
 }
-table {
+#game  {
   text-align: center;
   margin: 20px auto;
 }
@@ -20,4 +20,10 @@ td {
 div {
  width: 100px;
  border: 1px green solid;
+}
+
+#winner {
+  text-align:center;
+  border: none;
+  
 }

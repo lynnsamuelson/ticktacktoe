@@ -8,7 +8,7 @@ function score () {
       (dataArray[2] === "X" && dataArray[5] === "X" && dataArray[8] === "X") || 
       (dataArray[3] === "X" && dataArray[6] === "X" && dataArray[9] === "X") || 
       (dataArray[3] === "X" && dataArray[5] === "X" && dataArray[7] === "X")) {
-    alert('X Wins!');
+    $('#winner').text('X Wins!');
     console.log("X Wins!");
   }
   if ((dataArray[1] === "O" && dataArray[2] === "O" && dataArray[3] === "O") ||
@@ -19,7 +19,7 @@ function score () {
       (dataArray[2] === "O" && dataArray[5] === "O" && dataArray[8] === "O") || 
       (dataArray[3] === "O" && dataArray[6] === "O" && dataArray[9] === "O") || 
       (dataArray[3] === "O" && dataArray[5] === "O" && dataArray[7] === "O")) {
-    alert('O Wins!');
+    $('#winner').text('O Wins!');
     console.log("O Wins!");
   }
 };
@@ -53,3 +53,4 @@ $('td').dblclick(function() {
   console.log(dataArray);
   score();
 });
+
