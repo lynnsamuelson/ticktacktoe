@@ -22,14 +22,38 @@ td {
   border-radius: 5px;
   font-size: 2em;
 }
-div {
- width: 100px;
- border: 1px green solid;
+#reset {
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+  text-align: center; 
+  vertical-align: middle;
+  background-color: #d29062;
+  color: #d2c862;
+  border-radius: 5px;
+  font-size: 1.5em;
 }
-
 #winner {
   text-align:center;
   border: none;
   font-size: 3em;
-  
+}
+ul {
+  text-align:center;
+  border: none;
+  margin-top: -2%;
+  margin-left: -3%;
+}
+li {
+  font-size: 2em;
+  display: block;
+  list-style-type: none;
+  color: #b46834;
+}
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
